@@ -1,0 +1,32 @@
+# === Build output ===
+target/
+*.class
+
+# === IDE files ===
+.idea/
+*.iml
+nbproject/private/
+nb-configuration.xml
+.settings/
+.classpath
+.project
+*.launch
+
+# === Maven ===
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+release.properties
+
+# === Database / Config nhạy cảm ===
+src/main/resources/db.properties
+src/main/resources/application-local.properties
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Logs ===
+*.log
+logs/
