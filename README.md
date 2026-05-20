@@ -1,7 +1,5 @@
 # 🏦 Kế Hoạch Dự Án: Ứng Dụng Quản Lý Ngân Hàng (Desktop Java)
 
-> **Ngôn ngữ:** Java | **IDE:** NetBeans | **Nền tảng:** Desktop (Windows/Linux/macOS)
-
 ---
 
 ## 1. Tổng Quan Dự Án
@@ -226,53 +224,3 @@ BankManagerPro/
 
 ---
 
-## 9. Dependencies (pom.xml)
-
-```xml
-<!-- Kết nối MySQL -->
-<dependency>mysql:mysql-connector-java:8.0.33</dependency>
-
-<!-- Giao diện hiện đại -->
-<dependency>com.formdev:flatlaf:3.4</dependency>
-
-<!-- Mã hóa mật khẩu -->
-<dependency>org.mindrot:jbcrypt:0.4</dependency>
-
-<!-- Biểu đồ thống kê -->
-<dependency>org.jfree:jfreechart:1.5.4</dependency>
-
-<!-- Xuất PDF -->
-<dependency>com.itextpdf:itext7-core:7.2.5</dependency>
-
-<!-- Xuất Excel -->
-<dependency>org.apache.poi:poi-ooxml:5.2.5</dependency>
-
-<!-- Unit Testing -->
-<dependency>org.junit.jupiter:junit-jupiter:5.10.0</dependency>
-```
-
----
-
-## 10. Các Điểm Cần Lưu Ý
-
-> ⚠️ **Bảo mật:** Không lưu mật khẩu dạng plain text, luôn dùng BCrypt hashing.
-
-> ⚠️ **Giao dịch DB:** Sử dụng `Transaction` (commit/rollback) cho mọi thao tác tài chính để đảm bảo tính toàn vẹn dữ liệu.
-
-> ⚠️ **Validation:** Kiểm tra đầu vào nghiêm ngặt: số tiền > 0, đủ số dư, định dạng CCCD, SĐT hợp lệ.
-
-> 💡 **Mở rộng:** Thiết kế theo hướng dễ nâng cấp thêm tính năng mà không phá vỡ cấu trúc hiện có.
-
----
-
-## 11. Kết Quả Đầu Ra Dự Án
-
-- ✅ Ứng dụng desktop Java chạy được trên NetBeans
-- ✅ File `.jar` có thể chạy độc lập
-- ✅ Script SQL để tạo và khởi tạo database
-- ✅ Tài liệu hướng dẫn sử dụng (PDF)
-- ✅ Source code có comment đầy đủ
-
----
-
-*Dự án phù hợp làm đồ án môn học Lập trình Java / Cơ sở dữ liệu / Công nghệ phần mềm.*
